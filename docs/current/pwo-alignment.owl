@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/spar/pwo-alignment/"
+     xml:base="http://purl.org/spar/pwo-alignment/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:pwo="http://purl.org/spar/pwo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wfprov="http://purl.org/wf4ever/wfprov#"
+     xmlns:p-plan="http://purl.org/net/p-plan#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+     xmlns:opmw="http://www.opmw.org/ontology/">
+    <owl:Ontology rdf:about="http://purl.org/spar/pwo-alignment">
+        <owl:imports rdf:resource="http://purl.org/net/p-plan#"/>
+        <owl:imports rdf:resource="http://purl.org/spar/pwo"/>
+        <owl:imports rdf:resource="http://www.opmw.org/ontology/"/>
+        <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/0.1.1/wfprov.owl"/>
+        <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/master/wfdesc.owl"/>
+        <rdfs:comment xml:lang="en">The Publishing Workflow Ontology Alignment (PWO-A) is an ontology that describes the relation between PWO and other workflow-oriented ontologies.</rdfs:comment>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/spar/pwo-alignment/2017-06-01"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-06-01</dc:date>
+        <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Publishing Workflow Ontology Alignment (PWO-A)</dc:title>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/net/p-plan#isStepOfPlan -->
+
+    <rdf:Description rdf:about="http://purl.org/net/p-plan#isStepOfPlan">
+        <owl:equivalentProperty rdf:resource="http://purl.org/spar/pwo/isStepOf"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/spar/pwo/isExecutedBy -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/pwo/isExecutedBy">
+        <owl:equivalentProperty rdf:resource="http://purl.org/wf4ever/wfprov#describedByWorkflow"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/spar/pwo/isStepOf -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/pwo/isStepOf"/>
+
+
+
+    <!-- http://purl.org/wf4ever/wfprov#describedByWorkflow -->
+
+    <rdf:Description rdf:about="http://purl.org/wf4ever/wfprov#describedByWorkflow"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://purl.org/net/p-plan#Activity -->
+
+    <rdf:Description rdf:about="http://purl.org/net/p-plan#Activity">
+        <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/Action"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/net/p-plan#Bundle -->
+
+    <rdf:Description rdf:about="http://purl.org/net/p-plan#Bundle">
+        <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/WorkflowExecution"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/net/p-plan#Step -->
+
+    <rdf:Description rdf:about="http://purl.org/net/p-plan#Step">
+        <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/Step"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/spar/pwo/Action -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/pwo/Action">
+        <owl:equivalentClass rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/spar/pwo/Step -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/pwo/Step"/>
+
+
+
+    <!-- http://purl.org/spar/pwo/Workflow -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/pwo/Workflow">
+        <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+        <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfdesc#WorkflowTemplate"/>
+        <owl:equivalentClass rdf:resource="http://www.opmw.org/ontology/WorkflowTemplate"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Plan"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/spar/pwo/WorkflowExecution -->
+
+    <rdf:Description rdf:about="http://purl.org/spar/pwo/WorkflowExecution">
+        <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfprov#WorkflowRun"/>
+        <owl:equivalentClass rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionAccount"/>
+    </rdf:Description>
+
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#Workflow -->
+
+    <rdf:Description rdf:about="http://purl.org/wf4ever/wfdesc#Workflow"/>
+
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#WorkflowTemplate -->
+
+    <rdf:Description rdf:about="http://purl.org/wf4ever/wfdesc#WorkflowTemplate"/>
+
+
+
+    <!-- http://purl.org/wf4ever/wfprov#WorkflowRun -->
+
+    <rdf:Description rdf:about="http://purl.org/wf4ever/wfprov#WorkflowRun"/>
+
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowExecutionAccount -->
+
+    <rdf:Description rdf:about="http://www.opmw.org/ontology/WorkflowExecutionAccount"/>
+
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowExecutionProcess -->
+
+    <rdf:Description rdf:about="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+
+
+
+    <!-- http://www.opmw.org/ontology/WorkflowTemplate -->
+
+    <rdf:Description rdf:about="http://www.opmw.org/ontology/WorkflowTemplate"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isNeededBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/p-plan#Entity"/>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/p-plan#Activity"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isNeededBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.opmw.org/ontology/WorkflowExecutionArtifact"/>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.opmw.org/ontology/uses"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isProducedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.opmw.org/ontology/WorkflowExecutionArtifact"/>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.opmw.org/ontology/isGeneratedBy"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+    <owl:Class>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isProducedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/p-plan#Entity"/>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.org/net/p-plan#Activity"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

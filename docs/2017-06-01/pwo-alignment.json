@@ -1,0 +1,392 @@
+[
+  {
+    "@id": "http://purl.org/net/p-plan#Bundle",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/spar/pwo/WorkflowExecution"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9a6b3759ca8b44acb4c677fef52fe5a9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pwo/isProducedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/pwo/Step"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1f853973a88e464e9976a3f3f8a26ca1",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.opmw.org/ontology/uses"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na2ee85083358466ca3d879ad461c6e51",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N9a6b3759ca8b44acb4c677fef52fe5a9"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/net/p-plan#Entity"
+          },
+          {
+            "@id": "_:N12e87ced25364f64961f5f46e7b5ca72"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N12e87ced25364f64961f5f46e7b5ca72",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N2085f958c3244e389d1a373d12d052ce"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/net/p-plan#Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/net/p-plan#Activity",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/spar/pwo/Action"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neefe8a7eb7134f0d85d711e7cd042b09",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N68f2889a0a9846638d8f88f41e46c385"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/net/p-plan#Entity"
+          },
+          {
+            "@id": "_:N2a9b1f1750044c36aa86c4f9bb29f697"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/net/p-plan#Step",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/spar/pwo/Step"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2a9b1f1750044c36aa86c4f9bb29f697",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N854c6b5c70334e23adb88989c57966e3"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/net/p-plan#Activity"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pwo-alignment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Silvio Peroni"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2017-06-01"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/rights": [
+      {
+        "@language": "en",
+        "@value": "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@value": "The Publishing Workflow Ontology Alignment (PWO-A)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The Publishing Workflow Ontology Alignment (PWO-A) is an ontology that describes the relation between PWO and other workflow-oriented ontologies."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://www.opmw.org/ontology/"
+      },
+      {
+        "@id": "https://raw.github.com/wf4ever/ro/0.1.1/wfprov.owl"
+      },
+      {
+        "@id": "http://purl.org/net/p-plan#"
+      },
+      {
+        "@id": "http://purl.org/spar/pwo"
+      },
+      {
+        "@id": "https://raw.github.com/wf4ever/ro/master/wfdesc.owl"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://purl.org/spar/pwo-alignment/2017-06-01"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N913a7a7a5eb444c1b708e8943d372715",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.opmw.org/ontology/isGeneratedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/net/p-plan#isStepOfPlan",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://purl.org/spar/pwo/isStepOf"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pwo/Action",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://www.opmw.org/ontology/WorkflowExecutionProcess"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pwo/isExecutedBy",
+    "http://www.w3.org/2002/07/owl#equivalentProperty": [
+      {
+        "@id": "http://purl.org/wf4ever/wfprov#describedByWorkflow"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne2b9b957abd9491f9ff6bf54b3f8fdee",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N913a7a7a5eb444c1b708e8943d372715"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.opmw.org/ontology/WorkflowExecutionProcess"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pwo/WorkflowExecution",
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://www.opmw.org/ontology/WorkflowExecutionAccount"
+      },
+      {
+        "@id": "http://purl.org/wf4ever/wfprov#WorkflowRun"
+      }
+    ]
+  },
+  {
+    "@id": "_:N63b93db9858940dfbbd3e4010a051cb6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:N77463fa7721f4938b51f6795b034cc97"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.opmw.org/ontology/WorkflowExecutionArtifact"
+          },
+          {
+            "@id": "_:Ne2b9b957abd9491f9ff6bf54b3f8fdee"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pwo/Workflow",
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/net/p-plan#Plan"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "http://purl.org/wf4ever/wfdesc#Workflow"
+      },
+      {
+        "@id": "http://purl.org/wf4ever/wfdesc#WorkflowTemplate"
+      },
+      {
+        "@id": "http://www.opmw.org/ontology/WorkflowTemplate"
+      }
+    ]
+  },
+  {
+    "@id": "_:N854c6b5c70334e23adb88989c57966e3",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#used"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2085f958c3244e389d1a373d12d052ce",
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#wasGeneratedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb1bbfa70c4c14b1b9851cb0228e9c511",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:Na340875a6955406a8f95b975b442a51a"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.opmw.org/ontology/WorkflowExecutionArtifact"
+          },
+          {
+            "@id": "_:Nf37b3d7d2a3b4058b190db40f3339b7f"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:N68f2889a0a9846638d8f88f41e46c385",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pwo/isNeededBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/pwo/Step"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na340875a6955406a8f95b975b442a51a",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pwo/isNeededBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/pwo/Step"
+      }
+    ]
+  },
+  {
+    "@id": "_:N77463fa7721f4938b51f6795b034cc97",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/pwo/isProducedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/pwo/Step"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf37b3d7d2a3b4058b190db40f3339b7f",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "_:N1f853973a88e464e9976a3f3f8a26ca1"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.opmw.org/ontology/WorkflowExecutionProcess"
+      }
+    ]
+  }
+]

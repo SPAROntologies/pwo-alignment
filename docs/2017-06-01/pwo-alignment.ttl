@@ -1,0 +1,79 @@
+@prefix : <http://purl.org/spar/pwo-alignment/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix opmw: <http://www.opmw.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix p-plan: <http://purl.org/net/p-plan#> .
+@prefix pwo: <http://purl.org/spar/pwo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wfdesc: <http://purl.org/wf4ever/wfdesc#> .
+@prefix wfprov: <http://purl.org/wf4ever/wfprov#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+p-plan:Bundle owl:equivalentClass pwo:WorkflowExecution .
+
+p-plan:Step owl:equivalentClass pwo:Step .
+
+p-plan:isStepOfPlan owl:equivalentProperty pwo:isStepOf .
+
+<http://purl.org/spar/pwo-alignment> a owl:Ontology ;
+    dc:creator "Silvio Peroni"^^xsd:string ;
+    dc:date "2017-06-01"^^xsd:string ;
+    dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)."@en ;
+    dc:title "The Publishing Workflow Ontology Alignment (PWO-A)"^^xsd:string ;
+    rdfs:comment "The Publishing Workflow Ontology Alignment (PWO-A) is an ontology that describes the relation between PWO and other workflow-oriented ontologies."@en ;
+    owl:imports p-plan:,
+        <http://purl.org/spar/pwo>,
+        opmw:,
+        <https://raw.github.com/wf4ever/ro/0.1.1/wfprov.owl>,
+        <https://raw.github.com/wf4ever/ro/master/wfdesc.owl> ;
+    owl:versionIRI <http://purl.org/spar/pwo-alignment/2017-06-01> ;
+    owl:versionInfo "1.0"^^xsd:string .
+
+pwo:Workflow rdfs:subClassOf p-plan:Plan ;
+    owl:equivalentClass wfdesc:Workflow,
+        wfdesc:WorkflowTemplate,
+        opmw:WorkflowTemplate .
+
+pwo:isExecutedBy owl:equivalentProperty wfprov:describedByWorkflow .
+
+pwo:Action owl:equivalentClass opmw:WorkflowExecutionProcess .
+
+pwo:WorkflowExecution owl:equivalentClass wfprov:WorkflowRun,
+        opmw:WorkflowExecutionAccount .
+
+p-plan:Activity owl:equivalentClass pwo:Action .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty pwo:isProducedBy ;
+            owl:someValuesFrom pwo:Step ] ;
+    owl:intersectionOf ( opmw:WorkflowExecutionArtifact [ a owl:Restriction ;
+                owl:onProperty [ owl:inverseOf opmw:isGeneratedBy ] ;
+                owl:someValuesFrom opmw:WorkflowExecutionProcess ] ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty pwo:isProducedBy ;
+            owl:someValuesFrom pwo:Step ] ;
+    owl:intersectionOf ( p-plan:Entity [ a owl:Restriction ;
+                owl:onProperty [ owl:inverseOf <http://www.w3.org/ns/prov#wasGeneratedBy> ] ;
+                owl:someValuesFrom p-plan:Activity ] ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty pwo:isNeededBy ;
+            owl:someValuesFrom pwo:Step ] ;
+    owl:intersectionOf ( opmw:WorkflowExecutionArtifact [ a owl:Restriction ;
+                owl:onProperty [ owl:inverseOf opmw:uses ] ;
+                owl:someValuesFrom opmw:WorkflowExecutionProcess ] ) .
+
+[] a owl:Class ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:onProperty pwo:isNeededBy ;
+            owl:someValuesFrom pwo:Step ] ;
+    owl:intersectionOf ( p-plan:Entity [ a owl:Restriction ;
+                owl:onProperty [ owl:inverseOf <http://www.w3.org/ns/prov#used> ] ;
+                owl:someValuesFrom p-plan:Activity ] ) .
+
