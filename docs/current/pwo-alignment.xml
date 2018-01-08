@@ -5,151 +5,161 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="N63b93db9858940dfbbd3e4010a051cb6">
-    <owl:equivalentClass rdf:nodeID="N77463fa7721f4938b51f6795b034cc97"/>
-    <owl:intersectionOf rdf:nodeID="N1bde2ec364394ef2806b49d81185694b"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://purl.org/net/p-plan#isStepOfPlan">
+    <owl:equivalentProperty rdf:resource="http://purl.org/spar/pwo/isStepOf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ne2b9b957abd9491f9ff6bf54b3f8fdee">
-    <owl:onProperty rdf:nodeID="N913a7a7a5eb444c1b708e8943d372715"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/pwo-alignment">
-    <owl:versionIRI rdf:resource="http://purl.org/spar/pwo-alignment/2017-06-01"/>
-    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
-    <owl:imports rdf:resource="http://www.opmw.org/ontology/"/>
-    <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/0.1.1/wfprov.owl"/>
-    <owl:imports rdf:resource="http://purl.org/net/p-plan#"/>
-    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Publishing Workflow Ontology Alignment (PWO-A)</dc:title>
-    <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
-    <owl:imports rdf:resource="http://purl.org/spar/pwo"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-06-01</dc:date>
-    <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/master/wfdesc.owl"/>
-    <rdfs:comment xml:lang="en">The Publishing Workflow Ontology Alignment (PWO-A) is an ontology that describes the relation between PWO and other workflow-oriented ontologies.</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/spar/pwo/Workflow">
-    <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
-    <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfdesc#WorkflowTemplate"/>
-    <owl:equivalentClass rdf:resource="http://www.opmw.org/ontology/WorkflowTemplate"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Plan"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N913a7a7a5eb444c1b708e8943d372715">
-    <owl:inverseOf rdf:resource="http://www.opmw.org/ontology/isGeneratedBy"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N9a6b3759ca8b44acb4c677fef52fe5a9">
+  <rdf:Description rdf:nodeID="N5f5b3452e1cc45e9924c13f0e2293258">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isProducedBy"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N2085f958c3244e389d1a373d12d052ce">
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N7bb538e5078a405cb5cb5fad0f5b6466">
-    <rdf:first rdf:resource="http://purl.org/net/p-plan#Entity"/>
-    <rdf:rest rdf:nodeID="Ncccc62054f3c454db017a9e491df6434"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N753019176863472b9e1cc3040facc6b0">
-    <rdf:first rdf:nodeID="Nf37b3d7d2a3b4058b190db40f3339b7f"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="Na2ee85083358466ca3d879ad461c6e51">
-    <owl:intersectionOf rdf:nodeID="N7bb538e5078a405cb5cb5fad0f5b6466"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="N9a6b3759ca8b44acb4c677fef52fe5a9"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N2a9b1f1750044c36aa86c4f9bb29f697">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="N0730a6eca0384570a67c47bfcaeb43f4">
     <owl:someValuesFrom rdf:resource="http://purl.org/net/p-plan#Activity"/>
-    <owl:onProperty rdf:nodeID="N854c6b5c70334e23adb88989c57966e3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Ncaff4829bf25496e905cccdc655e494f"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb1bbfa70c4c14b1b9851cb0228e9c511">
-    <owl:equivalentClass rdf:nodeID="Na340875a6955406a8f95b975b442a51a"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="Nb284dd2b566d4053935ed436ee3a3d92"/>
+  <rdf:Description rdf:nodeID="N105e7b56aaed41c79fb16fa4ba6be778">
+    <owl:inverseOf rdf:resource="http://www.opmw.org/ontology/isGeneratedBy"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Na340875a6955406a8f95b975b442a51a">
+  <rdf:Description rdf:nodeID="N46ea73e7fe5048178eb94c503bf9758f">
+    <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isProducedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/pwo-alignment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="http://www.opmw.org/ontology/"/>
+    <owl:imports rdf:resource="http://purl.org/spar/pwo"/>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-06-01</dc:date>
+    <owl:imports rdf:resource="http://purl.org/net/p-plan#"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
+    <owl:versionIRI rdf:resource="http://purl.org/spar/pwo-alignment/2017-06-01"/>
+    <rdfs:comment xml:lang="en">The Publishing Workflow Ontology Alignment (PWO-A) is an ontology that describes the relation between PWO and other workflow-oriented ontologies.
+
+**URL:** http://purl.org/spar/pwo-alignment
+
+**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/pwo
+
+**Cite as:** Gangemi, A., Peroni, S., Shotton, D., Vitali, F. (2014). The Publishing Workflow Ontology (PWO). In Semantic Web, 8 (5): 703-718. DOI: https://doi.org/10.3233/SW-160230. Open Access at: http://www.semantic-web-journal.net/system/files/swj1301.pdf</rdfs:comment>
+    <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/0.1.1/wfprov.owl"/>
+    <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/master/wfdesc.owl"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
+    <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/).</dc:rights>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Publishing Workflow Ontology Alignment (PWO-A)</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N89c38f24b7ce43dfba9fd6ea6283ae0a">
+    <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isNeededBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N045f91b0d2224e7dbe95c4719b47c04f">
+    <rdf:rest rdf:nodeID="N100fe95a140f4091ad97a8474fd6d7d0"/>
+    <rdf:first rdf:resource="http://purl.org/net/p-plan#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N53455f3129f34dbab6825848f56e7ae5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+    <owl:onProperty rdf:nodeID="Ncb810c7b59494db3b84d64c096a09e92"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncdacf3d1a07746c6996c4f5cf13a1383">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isNeededBy"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N12e87ced25364f64961f5f46e7b5ca72">
-    <owl:onProperty rdf:nodeID="N2085f958c3244e389d1a373d12d052ce"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/net/p-plan#Activity"/>
+  <rdf:Description rdf:nodeID="N80e972b3899e422f89b1614ded8bacac">
+    <owl:equivalentClass rdf:nodeID="N46ea73e7fe5048178eb94c503bf9758f"/>
+    <owl:intersectionOf rdf:nodeID="N4e27c6467a144ef7b65597fbbf12d392"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nf37b3d7d2a3b4058b190db40f3339b7f">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:nodeID="N1f853973a88e464e9976a3f3f8a26ca1"/>
-    <owl:someValuesFrom rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N3f79b64caa764e21b42545d8a1f13a5f">
+  <rdf:Description rdf:nodeID="N4dd07b3a711d47d6a05a0fbc4575ce9b">
+    <rdf:first rdf:nodeID="Nf1499895efc248deb268e858eaf09e8b"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="Ne2b9b957abd9491f9ff6bf54b3f8fdee"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N77463fa7721f4938b51f6795b034cc97">
+  <rdf:Description rdf:nodeID="Nf1499895efc248deb268e858eaf09e8b">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isProducedBy"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
+    <owl:someValuesFrom rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
+    <owl:onProperty rdf:nodeID="N105e7b56aaed41c79fb16fa4ba6be778"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N1bde2ec364394ef2806b49d81185694b">
-    <rdf:first rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionArtifact"/>
-    <rdf:rest rdf:nodeID="N3f79b64caa764e21b42545d8a1f13a5f"/>
+  <rdf:Description rdf:nodeID="N100fe95a140f4091ad97a8474fd6d7d0">
+    <rdf:first rdf:nodeID="N0730a6eca0384570a67c47bfcaeb43f4"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/pwo/Action">
     <owl:equivalentClass rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionProcess"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/net/p-plan#Activity">
-    <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/Action"/>
+  <rdf:Description rdf:nodeID="Ne59e763f5eaa41ca8e4175348f2294d2">
+    <rdf:first rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionArtifact"/>
+    <rdf:rest rdf:nodeID="N26b7db9eef0b4cf793e0da53390c005c"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Neefe8a7eb7134f0d85d711e7cd042b09">
-    <owl:equivalentClass rdf:nodeID="N68f2889a0a9846638d8f88f41e46c385"/>
-    <owl:intersectionOf rdf:nodeID="N0c6b9e8c7d3f4a519a6eb0501c6bbe74"/>
+  <rdf:Description rdf:nodeID="Nfd539bf410934974a985c91fce72a5dc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="N40a9bd5f23ca465e832415cdf4b35579"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/net/p-plan#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24d3c5378f5444ad9139fbf89fd6fdd8">
+    <owl:intersectionOf rdf:nodeID="N045f91b0d2224e7dbe95c4719b47c04f"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N5f5b3452e1cc45e9924c13f0e2293258"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Ncccc62054f3c454db017a9e491df6434">
+  <rdf:Description rdf:nodeID="N628e7ec859a4460cb7a75d7308cf8d95">
+    <rdf:first rdf:resource="http://purl.org/net/p-plan#Entity"/>
+    <rdf:rest rdf:nodeID="N195b99f5cd8c485b8329dea5b91ccfe8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e27c6467a144ef7b65597fbbf12d392">
+    <rdf:rest rdf:nodeID="N4dd07b3a711d47d6a05a0fbc4575ce9b"/>
+    <rdf:first rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionArtifact"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N26b7db9eef0b4cf793e0da53390c005c">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="N12e87ced25364f64961f5f46e7b5ca72"/>
+    <rdf:first rdf:nodeID="N53455f3129f34dbab6825848f56e7ae5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N40a9bd5f23ca465e832415cdf4b35579">
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N195b99f5cd8c485b8329dea5b91ccfe8">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="Nfd539bf410934974a985c91fce72a5dc"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne21da408d85949f7a955c3cf8d91c1dc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="N89c38f24b7ce43dfba9fd6ea6283ae0a"/>
+    <owl:intersectionOf rdf:nodeID="Ne59e763f5eaa41ca8e4175348f2294d2"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/pwo/WorkflowExecution">
     <owl:equivalentClass rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionAccount"/>
     <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfprov#WorkflowRun"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N784debd593a845119ea84aab239ef2d9">
-    <rdf:first rdf:nodeID="N2a9b1f1750044c36aa86c4f9bb29f697"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:about="http://purl.org/spar/pwo/Workflow">
+    <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfdesc#WorkflowTemplate"/>
+    <owl:equivalentClass rdf:resource="http://www.opmw.org/ontology/WorkflowTemplate"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/net/p-plan#Plan"/>
+    <owl:equivalentClass rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N68f2889a0a9846638d8f88f41e46c385">
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/pwo/Step"/>
-    <owl:onProperty rdf:resource="http://purl.org/spar/pwo/isNeededBy"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N0c6b9e8c7d3f4a519a6eb0501c6bbe74">
-    <rdf:first rdf:resource="http://purl.org/net/p-plan#Entity"/>
-    <rdf:rest rdf:nodeID="N784debd593a845119ea84aab239ef2d9"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="N854c6b5c70334e23adb88989c57966e3">
-    <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#used"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/net/p-plan#Step">
-    <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/Step"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/net/p-plan#isStepOfPlan">
-    <owl:equivalentProperty rdf:resource="http://purl.org/spar/pwo/isStepOf"/>
+  <rdf:Description rdf:nodeID="Nea7dfc1c40034adfbc918e5cdd382455">
+    <owl:intersectionOf rdf:nodeID="N628e7ec859a4460cb7a75d7308cf8d95"/>
+    <owl:equivalentClass rdf:nodeID="Ncdacf3d1a07746c6996c4f5cf13a1383"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/net/p-plan#Bundle">
     <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/WorkflowExecution"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="Nb284dd2b566d4053935ed436ee3a3d92">
-    <rdf:rest rdf:nodeID="N753019176863472b9e1cc3040facc6b0"/>
-    <rdf:first rdf:resource="http://www.opmw.org/ontology/WorkflowExecutionArtifact"/>
+  <rdf:Description rdf:nodeID="Ncaff4829bf25496e905cccdc655e494f">
+    <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="N1f853973a88e464e9976a3f3f8a26ca1">
+  <rdf:Description rdf:about="http://purl.org/net/p-plan#Activity">
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/Action"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ncb810c7b59494db3b84d64c096a09e92">
     <owl:inverseOf rdf:resource="http://www.opmw.org/ontology/uses"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/pwo/isExecutedBy">
     <owl:equivalentProperty rdf:resource="http://purl.org/wf4ever/wfprov#describedByWorkflow"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/net/p-plan#Step">
+    <owl:equivalentClass rdf:resource="http://purl.org/spar/pwo/Step"/>
   </rdf:Description>
 </rdf:RDF>

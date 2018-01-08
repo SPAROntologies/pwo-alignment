@@ -17,7 +17,17 @@
         <owl:imports rdf:resource="http://www.opmw.org/ontology/"/>
         <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/0.1.1/wfprov.owl"/>
         <owl:imports rdf:resource="https://raw.github.com/wf4ever/ro/master/wfdesc.owl"/>
-        <rdfs:comment xml:lang="en">The Publishing Workflow Ontology Alignment (PWO-A) is an ontology that describes the relation between PWO and other workflow-oriented ontologies.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Publishing Workflow Ontology Alignment (PWO-A) is an ontology that describes the relation between PWO and other workflow-oriented ontologies.
+
+**URL:** http://purl.org/spar/pwo-alignment
+
+**Creators**: [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/pwo
+
+**Cite as:** Gangemi, A., Peroni, S., Shotton, D., Vitali, F. (2014). The Publishing Workflow Ontology (PWO). In Semantic Web, 8 (5): 703-718. DOI: https://doi.org/10.3233/SW-160230. Open Access at: http://www.semantic-web-journal.net/system/files/swj1301.pdf</rdfs:comment>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silvio Peroni</dc:creator>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</owl:versionInfo>
         <owl:versionIRI rdf:resource="http://purl.org/spar/pwo-alignment/2017-06-01"/>
